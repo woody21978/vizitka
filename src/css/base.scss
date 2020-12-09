@@ -1,0 +1,69 @@
+@import './fonts.scss';
+@import './colors.scss';
+// TEXT
+.text-light {
+	color: $light-color;
+}
+
+.container {
+	max-width: 1600px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.border-gradient {
+	border-image-slice: 1 !important;
+}
+
+.btn {
+	background: transparent;
+	outline: none;
+	user-select: none;
+	box-sizing: border-box;
+	cursor: pointer;
+
+	&-text {
+		font-size: 15px;
+		letter-spacing: 0.3px;
+		text-align: center;
+	}
+
+	&-gold {
+		background-image: linear-gradient(90deg, #9c6d41 0%, #dcad68 100%);
+		border: 3px solid;
+		border-image-source: linear-gradient(90deg, #ba8c48 0%, #a97d54 100%);
+	}
+
+	&-xs {
+		padding: 10px 27px;
+	}
+}
+
+.bg-main {
+	background: $main-color;
+}
+
+.hide {
+	display: none;
+}
+
+.section {
+	background: $main-color;
+
+	&__title {
+		font-family: $OpenSans;
+		font-weight: bold;
+		font-size: 26px;
+		line-height: 35px;
+		letter-spacing: 0.32px;
+		color: #fff;
+	}
+}
+
+.svg {
+	transition: 0.2s;
+}
+
+.rotate180 {
+	transform: rotate(180deg);
+}

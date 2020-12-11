@@ -4,7 +4,8 @@ import './Main.scss';
 import Menu from '../../components/Header/Menu/Menu';
 import SectionUser from './components/SectionUser/SectionUser';
 import SectionSmi from './components/SectionSmi/SectionSmi';
-import Dropdown from '../../components/Dropdown/Dropdown';
+import SectionContact from './components/SectionContact/SectionContact';
+import Footer from '../../components/Footer/Footer';
 
 function Main() {
 	return (
@@ -12,6 +13,8 @@ function Main() {
 			<Menu />
 			<SectionUser />
 			<SectionSmi />
+			<SectionContact />
+			<Footer />
 		</>
 	);
 }

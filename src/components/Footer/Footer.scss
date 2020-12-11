@@ -1,0 +1,79 @@
+@import '../../css/colors.scss';
+@import '../../css/fonts.scss';
+.footer {
+	padding-top: 263px;
+	padding-bottom: 85px;
+	background: $main-color url('./images/footrer-bg.png');
+	background-size: cover;
+	font-family: $OpenSans;
+
+	&-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		row-gap: 74px;
+		column-gap: 120px;
+		justify-content: space-between;
+	}
+
+	&-column {
+		&__title {
+			color: $light-color;
+			font-weight: 700;
+			font-size: 26px;
+			letter-spacing: 0.32px;
+		}
+
+		&__copyright {
+			margin-top: 27px;
+			color: $light-color;
+			font-size: 18px;
+			letter-spacing: 0.32p;
+		}
+	}
+
+	&-list {
+		list-style-type: none;
+
+		&__item {
+			margin-top: 20px;
+		}
+
+		&__link {
+			text-decoration: none;
+			color: $light-color;
+			font-size: 18px;
+			transition: 0.2s;
+
+			&:hover {
+				color: #525252;
+			}
+		}
+	}
+
+	&-company {
+		display: flex;
+		align-items: center;
+
+		&__icon {
+			margin-right: 29px;
+		}
+	}
+
+	&-payments {
+		margin-top: 35px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&-social {
+		display: flex;
+		align-items: center;
+		margin-top: 29px;
+
+		&__item:first-child {
+			margin-right: 22px;
+		}
+	}
+}
+
+// @me

@@ -45,5 +45,8 @@
 		letter-spacing: 0.34px;
 		cursor: pointer;
 		font-size: 17px;
+		background: linear-gradient(to left, #9c6d41, #dcad68);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
 	}
 }

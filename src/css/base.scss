@@ -58,6 +58,12 @@
 		letter-spacing: 0.32px;
 		color: #fff;
 	}
+
+	&-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 }
 
 .svg {

@@ -1,0 +1,83 @@
+@import '../../css/fonts.scss';
+@import '../../css/colors.scss';
+.wine {
+	height: 403px;
+	background-color: $dark-color;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 0 85px;
+	&-main {
+		display: flex;
+		align-items: center;
+	}
+	&-info {
+		font-family: $OpenSans;
+		margin-left: 96px;
+
+		&__title {
+			font-weight: 600;
+			font-size: 24px;
+			letter-spacing: 0.32px;
+			color: $light-color;
+		}
+
+		&__subtitle {
+			font-weight: 600;
+			font-size: 18px;
+			color: #8b8b8b;
+			letter-spacing: 0.32px;
+			margin-top: 15px;
+			margin-bottom: 34px;
+		}
+
+		&__price {
+			font-family: $OpenSans;
+			font-weight: bold;
+			font-size: 42px;
+			color: $light-color;
+			margin-top: 15px;
+			margin-bottom: 25px;
+
+			&__valute {
+				color: #aeaeae;
+			}
+		}
+	}
+
+	&-rating {
+		display: inline-flex;
+		align-items: center;
+
+		&__item {
+			margin-right: 13px;
+		}
+
+		&__num {
+			font-family: $OpenSans;
+			font-weight: 400;
+			letter-spacing: 0.32px;
+			margin-left: 3px;
+			color: #747474;
+		}
+	}
+
+	&-characteristic {
+		font-family: $OpenSans;
+		letter-spacing: 0.32px;
+
+		&__name {
+			color: #747474;
+			margin-bottom: 40px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		&__desc {
+			color: $light-color;
+		}
+	}
+}

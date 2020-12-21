@@ -1,6 +1,6 @@
 import React from 'react-dom';
 import './MediaCards.scss';
-import state from '../../../../store';
+import state from '../../store';
 // Компоненты
 import MediaCard from '../MediaCard/MediaCard';
 

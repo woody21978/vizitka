@@ -21,6 +21,7 @@
 	user-select: none;
 	box-sizing: border-box;
 	cursor: pointer;
+	font-family: $CorsicaRegular;
 
 	&-text {
 		font-size: 15px;
@@ -63,6 +64,15 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+	}
+
+	&-smi {
+		padding-top: 120px;
+	}
+
+	&-contact {
+		padding-top: 84px;
+		padding-bottom: 130px;
 	}
 }
 

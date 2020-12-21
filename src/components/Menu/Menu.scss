@@ -1,0 +1,65 @@
+@import '../../css/colors.scss';
+@import '../../css/fonts.scss';
+.wrapper-menu {
+	width: 100%;
+	height: 90px;
+	background-color: $main-color;
+	box-sizing: border-box;
+	border-bottom: 1px solid #413f3f;
+}
+.menu {
+	width: 100%;
+	height: 90px;
+	background: $main-color;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+	border-bottom: 1px solid #413f3f;
+
+	&__list {
+		display: flex;
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		margin-right: 59px;
+		transition: 2s;
+		cursor: pointer;
+
+		&:hover .menu__icon path {
+			fill: url('#paint0_linear');
+		}
+	}
+
+	&__icon {
+		margin-right: 9px;
+
+		& path {
+			transition: fill 0.9s;
+			// fill: lime;
+		}
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+		color: $light-color;
+		font-size: 18px;
+		text-decoration: none;
+		padding: 10px 13px;
+		box-sizing: border-box;
+		border: 1px solid transparent;
+		font-family: $CorsicaRegular;
+
+		&--active {
+			border: 1px solid;
+			border-image-source: linear-gradient(to left, #9c6d41, #dcad68, #9c6d41);
+
+			& .menu__icon path {
+				fill: url('#paint0_linear');
+			}
+		}
+	}
+}

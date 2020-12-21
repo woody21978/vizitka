@@ -28,6 +28,25 @@ const state = store({
 			type: 'new',
 		},
 	],
+
+	// Product Whine
+	wines: [
+		{
+			img: '../images/products/whines/whine-rose.png',
+			title: 'Российское вино Rose de Gai-Kodzor розовое',
+			subtitle: 'Muscat de Gai-Kodzor Sec, 750 мл',
+			price: 957,
+			rating: 3,
+			characterization: {
+				region: 'Россия, Краснодарский край, Гай-Кодзор',
+				producer: 'ООО Виноградники Гай-Кодзора',
+				fortress: 12.5,
+				grade: 'Мускат',
+				whine: 'Белое, Сухое',
+				more: 'https://leofisun.com',
+			},
+		},
+	],
 });
 
 export default state;

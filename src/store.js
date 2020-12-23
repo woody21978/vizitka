@@ -1,6 +1,13 @@
 import { store } from '@risingstack/react-easy-state';
 
 const state = store({
+	sliders: { followers: { min: 10, max: 20 }, views: { min: 10, max: 20 } },
+	dropDowns: {
+		media: {
+			selected: 'Сначала новые',
+			list: ['Популярные', 'писок - 2', 'писок - 3'],
+		},
+	},
 	// SMI
 	media: [
 		{

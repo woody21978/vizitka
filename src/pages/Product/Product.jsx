@@ -3,6 +3,7 @@ import React from 'react';
 import Section from '../../components/Section/Section';
 import Dropdown from '../../components/Dropdown/Dropdown';
 import ProductsWineContainer from '../../containers/ProductsWineContainer/index';
+import SortingPanel from '../../components/SortingPanel/SortingPanel';
 
 function Product({ product }) {
 	// const { img, title, subtitle, price, rating, characterizationObj } = product;
@@ -14,6 +15,7 @@ function Product({ product }) {
 				dropdown={<Dropdown />}
 				content={<ProductsWineContainer />}
 			/>
+			<SortingPanel />
 		</main>
 	);
 }

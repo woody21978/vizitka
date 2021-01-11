@@ -1,20 +1,29 @@
 import React from 'react';
-import './ProductsWine';
+import './ProductsWine.scss';
 // Компоненты
 import '../ProductWine/ProductWine';
 import ProductWine from '../ProductWine/ProductWine';
-function ProductsWine({ products }) {
-	// const { img, title, subtitle, price, rating, characterizationObj } = products;
-	return (
-		<>
-			{products.map((items) => {
-				<ProductWine product={items} />;
-			})}
-		</>
-	);
+import Button from '../Button/Button';
 
-	// console.log(products[0].img);
-	// return <div className="products-wine"></div>;
+function ProductsWine({ products, action, visibleButton }) {
+	return (
+		<div className="products-wrapper">
+			<div className="products-wine">
+				{products.map((items) => (
+					<ProductWine key={items.id} product={items} />
+				))}
+			</div>
+			{visibleButton && (
+				<Button
+					size="lg"
+					type="transparent"
+					classes=""
+					text="Показать больше"
+					action={action}
+				/>
+			)}
+		</div>
+	);
 }
 
 export default ProductsWine;

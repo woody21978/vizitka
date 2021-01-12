@@ -36,24 +36,100 @@ const state = store({
 		},
 	],
 
-	// Product Whine
-	wines: [
-		{
-			img: '../images/products/whines/whine-rose.png',
-			title: 'Российское вино Rose de Gai-Kodzor розовое',
-			subtitle: 'Muscat de Gai-Kodzor Sec, 750 мл',
-			price: 957,
-			rating: 3,
-			characterization: {
-				region: 'Россия, Краснодарский край, Гай-Кодзор',
-				producer: 'ООО Виноградники Гай-Кодзора',
-				fortress: 12.5,
-				grade: 'Мускат',
-				whine: 'Белое, Сухое',
-				more: 'https://leofisun.com',
+	swiper: {
+		background: '../images/swiper/slides.jpg',
+		slides: [
+			{
+				id: 1,
+				title: 'FisunWine Since 1901',
+				desc:
+					'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum sed do eiusmod tempor incididunt ut labore.',
 			},
-		},
-	],
+			{
+				id: 2,
+				title: 'YouTube social',
+				desc:
+					'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum sed do eiusmod tempor incididunt ut labore.',
+			},
+			{
+				id: 3,
+				title: 'Website Domains Names & Hosting',
+				desc:
+					'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum sed do eiusmod tempor incididunt ut labore.',
+			},
+		],
+	},
+
+	// Product Whine
+	productWine: {
+		offset: 4,
+		wines: [
+			{
+				id: 1,
+				img: '../images/products/wines/wine-rose.png',
+				title: 'Российское вино Rose de Gai-Kodzor розовое',
+				subtitle: 'Muscat de Gai-Kodzor Sec, 750 мл',
+				price: 957,
+				rating: 3,
+				characterization: {
+					region: 'Россия, Краснодарский край, Гай-Кодзор',
+					producer: 'ООО Виноградники Гай-Кодзора',
+					fortress: 12.5,
+					grade: 'Мускат',
+					whine: 'Белое, Сухое',
+					more: 'https://leofisun.com',
+				},
+			},
+			{
+				id: 2,
+				img: '../images/products/wines/wine-chardonnay.png',
+				title: 'Вино Gai-Kodzor Chardonnay белое сухое',
+				subtitle: 'Muscat de Gai-Kodzor Sec, 750 мл',
+				price: 957,
+				rating: 3,
+				characterization: {
+					region: 'Россия, Краснодарский край, Гай-Кодзор',
+					producer: 'ООО Виноградники Гай-Кодзора',
+					fortress: 12.5,
+					grade: 'Мускат',
+					whine: 'Белое, Сухое',
+					more: 'https://leofisun.com',
+				},
+			},
+			{
+				id: 3,
+				img: '../images/products/wines/wine-kodzor.png',
+				title: 'Российское вино Rose de Gai-Kodzor розовое',
+				subtitle: 'Muscat de Gai-Kodzor Sec, 750 мл',
+				price: 957,
+				rating: 3,
+				characterization: {
+					region: 'Россия, Краснодарский край, Гай-Кодзор',
+					producer: 'ООО Виноградники Гай-Кодзора',
+					fortress: 12.5,
+					grade: 'Мускат',
+					whine: 'Белое, Сухое',
+					more: 'https://leofisun.com',
+				},
+			},
+			{
+				id: 4,
+				img: '../images/products/wines/wine-white.png',
+				title: 'Российское вино Rose de Gai-Kodzor розовое',
+				subtitle: 'Muscat de Gai-Kodzor Sec, 750 мл',
+				price: 957,
+				rating: 3,
+				characterization: {
+					region: 'Россия, Краснодарский край, Гай-Кодзор',
+					producer: 'ООО Виноградники Гай-Кодзора',
+					fortress: 12.5,
+					grade: 'Мускат',
+					whine: 'Белое, Сухое',
+					more: 'https://leofisun.com',
+				},
+			},
+		],
+	},
 });
 
 export default state;

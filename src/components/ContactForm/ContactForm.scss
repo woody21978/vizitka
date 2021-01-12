@@ -20,13 +20,7 @@
 		font-size: 49px;
 
 		&__subtitle {
-			background: linear-gradient(
-					90deg,
-					#9c6d41 0%,
-					#dcad68 52.6%,
-					#9c6d41 100%
-				),
-				linear-gradient(0deg, #ffffff, #ffffff);
+			background: linear-gradient(90deg, #9c6d41, #dcad68, #9c6d41);
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
 		}

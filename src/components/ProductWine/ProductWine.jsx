@@ -3,7 +3,9 @@ import './ProductWine.scss';
 // Компоненты
 import Button from '../Button/Button';
 
-function ProductWhine() {
+function ProductWhine({ product }) {
+	const { id, img, price, rating, title, subtitle, characterization } = product;
+	const { region, producer, fortress, grade, whine } = characterization;
 	const getRating = (rating) => {
 		let content = [];
 		let count = 5;
@@ -31,50 +33,39 @@ function ProductWhine() {
 	return (
 		<div className="wine">
 			<div className="wine-main">
-				<img
-					src="../images/products/whines/whine-rose.png"
-					alt=""
-					className="wine__photo"
-				/>
+				<img src={img} alt="" className="wine__photo" />
 				<div className="wine-info">
-					<span className="wine-info__title">
-						Российское вино Rose de Gai-Kodzor розовое
-					</span>
-					<p className="wine-info__subtitle">
-						Muscat de Gai-Kodzor Sec, 750 мл
-					</p>
+					<span className="wine-info__title">{title}</span>
+					<p className="wine-info__subtitle">{subtitle}</p>
 					<div className="wine-rating">
-						{getRating(5)}
+						{getRating(rating)}
 						<span className="wine-rating__num">20</span>
 					</div>
 					<p className="wine-info__price">
-						957<span className="wine-info__price__valute">₽</span>
+						{price}
+						<span className="wine-info__price__valute">₽</span>
 					</p>
 					<Button type="gold" size="xs" text="Подробнее" />
 				</div>
 			</div>
 			<div className="wine-characteristic">
 				<p className="wine-characteristic__name">
-					Регион:{' '}
-					<span className="wine-characteristic__desc">
-						Россия, Краснодарский край, Гай-Кодзор
-					</span>
+					Регион: <span className="wine-characteristic__desc">{region}</span>
 				</p>
 				<p className="wine-characteristic__name">
 					Производитель:{' '}
-					<span className="wine-characteristic__desc">
-						ООО Виноградники Гай-Кодзора
-					</span>
+					<span className="wine-characteristic__desc">{producer}</span>
 				</p>
 				<p className="wine-characteristic__name">
-					Крепость: <span className="wine-characteristic__desc">12.5%</span>
+					Крепость:{' '}
+					<span className="wine-characteristic__desc">{fortress}%</span>
 				</p>
 				<p className="wine-characteristic__name">
 					Сорт винограда:{' '}
-					<span className="wine-characteristic__desc">Мускат</span>
+					<span className="wine-characteristic__desc">{grade}</span>
 				</p>
 				<p className="wine-characteristic__name">
-					Вино: <span className="wine-characteristic__desc">Белое, Сухое</span>
+					Вино: <span className="wine-characteristic__desc">{whine}</span>
 				</p>
 				<p className="wine-characteristic__name">
 					Подробнее:{' '}

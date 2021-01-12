@@ -1,0 +1,86 @@
+@import '../../css/base.scss';
+
+.theme-dropdown {
+	width: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	position: relative;
+
+	cursor: pointer;
+
+	&-selected {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		&__item {
+			font-family: $OpenSans;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 22px;
+
+			color: $grey;
+		}
+
+		&__img {
+			transition: 0.5s;
+			cursor: pointer;
+
+			&_open {
+				transform: rotate(180deg);
+			}
+		}
+	}
+
+	&-list {
+		position: absolute;
+		top: 100%;
+		width: 100%;
+		max-height: 400px;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		border-radius: 8px;
+
+		padding: 10px 0;
+		box-sizing: border-box;
+
+		background: $light-dark-color;
+
+		overflow-y: auto;
+
+		&__item {
+			// margin-top: 5px;
+			width: 100%;
+
+			padding: 5px 0;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			font-family: $OpenSans;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 20px;
+
+			// border-radius: 1000px;
+
+			color: #fff;
+
+			transition: 0.5s;
+			cursor: pointer;
+
+			&:hover {
+				background: #a4a4a4;
+			}
+		}
+	}
+}

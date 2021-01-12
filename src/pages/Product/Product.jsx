@@ -5,6 +5,7 @@ import SwiperContainer from '../../containers/SwiperContainer/SwiperContainer';
 import Dropdown from '../../components/Dropdown/Dropdown';
 import ProductsWineContainer from '../../containers/ProductsWineContainer/index';
 import Footer from '../../components/Footer/Footer';
+import SortingPanel from '../../components/SortingPanel/SortingPanel';
 
 function Product() {
 	return (
@@ -14,7 +15,12 @@ function Product() {
 				<Section
 					title="Российское вино"
 					dropdown={<Dropdown />}
-					content={<ProductsWineContainer />}
+					content={
+						<>
+							<SortingPanel />
+							<ProductsWineContainer />
+						</>
+					}
 				/>
 			</main>
 			<Footer />

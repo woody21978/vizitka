@@ -7,6 +7,24 @@ const state = store({
 			selected: 'Сначала новые',
 			list: ['Популярные', 'писок - 2', 'писок - 3'],
 		},
+
+		theme: {
+			list: [
+				{ id: 0, name: 'Выберите тематику' },
+				{ id: 1, name: 'option1' },
+				{ id: 2, name: 'option2' },
+				{ id: 3, name: 'option3' },
+			],
+		},
+
+		violation: {
+			list: [
+				{ id: 0, name: 'Выберите тематику' },
+				{ id: 1, name: 'option1' },
+				{ id: 2, name: 'option2' },
+				{ id: 3, name: 'option3' },
+			],
+		},
 	},
 	// SMI
 	media: [

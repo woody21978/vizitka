@@ -58,7 +58,7 @@ const CustomSlider = withStyles({
 	},
 	active: {},
 	track: {
-		color: '#d5a664',
+		backgroundImage: 'linear-gradient(to left, #9c6d41, #dcad68, #9c6d41)',
 		height: 3,
 	},
 	rail: {

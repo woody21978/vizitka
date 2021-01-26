@@ -10,7 +10,7 @@ function MediaCards() {
 			{state.media.length > 0 ? (
 				state.media.map((item, index) => {
 					// console.log()
-					return <MediaCard key={item.id} data={item} />;
+					return <MediaCard key={index} data={item} />;
 				})
 			) : (
 				<span>123</span>

@@ -9,8 +9,8 @@ function ProductsWine({ products, action, visibleButton }) {
 	return (
 		<div className="products-wrapper">
 			<div className="products-wine">
-				{products.map((items) => (
-					<ProductWine key={items.id} product={items} />
+				{products.map((items, index) => (
+					<ProductWine key={index} product={items} />
 				))}
 			</div>
 			{visibleButton && (

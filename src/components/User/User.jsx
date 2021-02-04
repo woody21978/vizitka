@@ -2,7 +2,7 @@ import React from 'react';
 import './User.scss';
 import Button from '../Button/Button.jsx';
 
-function User() {
+const User = () => {
 	return (
 		<div className="user">
 			<div className="user-avatar">
@@ -36,6 +36,6 @@ function User() {
 			</div>
 		</div>
 	);
-}
+};
 
 export default User;

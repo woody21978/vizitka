@@ -7,7 +7,7 @@ import SwiperCore, { Autoplay, Pagination } from 'swiper';
 import 'swiper/swiper.scss';
 // import 'swiper/components/pagination/pagination.scss';
 
-function SwiperSlider({ data, background }) {
+const SwiperSlider = ({ data, background }) => {
 	const params = {
 		spaceBetween: 30,
 		loop: true,
@@ -44,6 +44,6 @@ function SwiperSlider({ data, background }) {
 			</div>
 		</div>
 	);
-}
+};
 
 export default SwiperSlider;

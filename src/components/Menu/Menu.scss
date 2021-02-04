@@ -2,14 +2,91 @@
 @import '../../css/fonts.scss';
 
 .menu {
-	width: 100%;
-	height: 90px;
-	box-sizing: border-box;
 	background: $main-color;
 
 	&__wrapper {
+		width: 100%;
+		height: 90px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+	}
+
+	&-logo {
+		color: $light-color;
+		text-align: center;
+
+		&__title {
+			height: 30px;
+			font-family: $WilliamRegular;
+			font-size: 21px;
+			box-sizing: border-box;
+			border-left: 1px solid $dark-gold;
+			padding: 3px 5px 5px;
+			position: relative;
+
+			&::before {
+				content: '';
+				width: 100%;
+				height: 1px;
+				display: block;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				background: $gradinet;
+			}
+		}
+
+		&__subtitle {
+			height: 30px;
+			font-family: $OpenSans;
+			font-size: 13px;
+			box-sizing: border-box;
+			border-right: 1px solid $dark-gold;
+			padding-top: 5px;
+		}
+	}
+
+	&__nav {
+		display: flex;
+	}
+
+	&-link {
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+		color: $light-color;
+		margin-right: 70px;
+
+		&__title {
+			font-size: 18px;
+			font-family: $CorsicaRegular;
+		}
+	}
+
+	&-link:hover &-icons__item {
+		opacity: 0;
+	}
+
+	&-link:hover &-icons__item--gradient {
+		opacity: 1;
+	}
+
+	&-icons {
+		position: relative;
+		width: 24px;
+		height: 24px;
+		margin-right: 9px;
+
+		&__item {
+			position: absolute;
+			top: 0;
+			left: 0;
+			transition: 0.3s;
+
+			&--gradient {
+				opacity: 0;
+			}
+		}
 	}
 }

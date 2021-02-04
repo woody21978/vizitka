@@ -148,6 +148,175 @@ const state = store({
 			},
 		],
 	},
+
+	// ProductAccount
+	productChannel: {
+		offset: 16,
+		channels: [
+			{
+				id: 1,
+				type: 'silver', // 0 - def, 1 - silver, 2 - gold
+				image: 'images/products/cards/channels/channel.jpg',
+				name: 'Kate Angel',
+				pin: true,
+				desc: 'Отличный, живой аккаунт, для любых ваших начинаний.',
+				characteristics: [
+					{
+						name: 'Подписчики',
+						value: '14 400 000',
+					},
+					{
+						name: 'Монетизация',
+						value: 'есть',
+					},
+				],
+				price: '600.000',
+			},
+			{
+				id: 2,
+				type: 'gold', // 0 - def, 1 - silver, 2 - gold
+				image: 'images/products/cards/channels/channel.jpg',
+				name: 'Kate Angel',
+				pin: false,
+				desc: 'Отличный, живой аккаунт, для любых ваших начинаний.',
+				characteristics: [
+					{
+						name: 'Подписчики',
+						value: '14 400 000',
+					},
+					{
+						name: 'Монетизация',
+						value: 'есть',
+					},
+				],
+				price: '600.000',
+			},
+			{
+				id: 3,
+				type: '', // 0 - def, 1 - silver, 2 - gold
+				image: 'images/products/cards/channels/channel.jpg',
+				name: 'Kate Angel',
+				pin: false,
+				desc: 'Отличный, живой аккаунт, для любых ваших начинаний.',
+				characteristics: [
+					{
+						name: 'Подписчики',
+						value: '14 400 000',
+					},
+					{
+						name: 'Монетизация',
+						value: 'есть',
+					},
+				],
+				price: '600.000',
+			},
+			{
+				id: 4,
+				type: '', // 0 - def, 1 - silver, 2 - gold
+				image: 'images/products/cards/channels/channel.jpg',
+				name: 'Kate Angel',
+				pin: false,
+				desc: 'Отличный, живой аккаунт, для любых ваших начинаний.',
+				characteristics: [
+					{
+						name: 'Подписчики',
+						value: '14 400 000',
+					},
+					{
+						name: 'Монетизация',
+						value: 'есть',
+					},
+				],
+				price: '600.000',
+			},
+		],
+	},
+
+	productDomain: {
+		offset: 16,
+		domains: [
+			{
+				id: 1,
+				type: 'gold',
+				name: 'Youtube.com',
+				characteristics: [
+					{
+						name: 'Дата регистраций',
+						value: '22.11.2020',
+					},
+					{
+						name: 'Тематика',
+						value: 'видео хостинг',
+					},
+				],
+				price: '600.000',
+			},
+			{
+				id: 2,
+				type: 'silver',
+				name: 'Google.com',
+				characteristics: [
+					{
+						name: 'Дата регистраций',
+						value: '22.11.2020',
+					},
+					{
+						name: 'Тематика',
+						value: 'видео хостинг',
+					},
+				],
+				price: '600.000',
+			},
+			{
+				id: 3,
+				type: '',
+				name: 'Google.com',
+				characteristics: [
+					{
+						name: 'Дата регистраций',
+						value: '22.11.2020',
+					},
+					{
+						name: 'Тематика',
+						value: 'видео хостинг',
+					},
+				],
+				price: '600.000',
+			},
+			{
+				id: 4,
+				type: '',
+				name: 'Google.com',
+				characteristics: [
+					{
+						name: 'Дата регистраций',
+						value: '22.11.2020',
+					},
+					{
+						name: 'Тематика',
+						value: 'видео хостинг',
+					},
+				],
+				price: '600.000',
+			},
+			{
+				id: 5,
+				type: '',
+				name: 'Google.com',
+				characteristics: [
+					{
+						name: 'Дата регистраций',
+						value: '22.11.2020',
+					},
+					{
+						name: 'Тематика',
+						value: 'видео хостинг',
+					},
+				],
+				price: '600.000',
+			},
+		],
+	},
 });
 
 export default state;

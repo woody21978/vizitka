@@ -3,7 +3,7 @@ import './ProductWine.scss';
 // Компоненты
 import Button from '../Button/Button';
 
-function ProductWhine({ product }) {
+const ProductWhine = ({ product }) => {
 	const { id, img, price, rating, title, subtitle, characterization } = product;
 	const { region, producer, fortress, grade, whine } = characterization;
 	const getRating = (rating) => {
@@ -76,6 +76,6 @@ function ProductWhine({ product }) {
 			</div>
 		</div>
 	);
-}
+};
 
 export default ProductWhine;

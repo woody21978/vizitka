@@ -1,7 +1,7 @@
 import React from 'react';
 import './Section.scss';
 
-function Section({ title, subtitle, dropdown, classes, content }) {
+const Section = ({ title, subtitle, dropdown, classes, content }) => {
 	return (
 		<section className={`section ${classes}`}>
 			<div className="container">
@@ -14,6 +14,7 @@ function Section({ title, subtitle, dropdown, classes, content }) {
 			</div>
 		</section>
 	);
-}
+};
 
+Section.defaultProps = { classes: '123' };
 export default Section;

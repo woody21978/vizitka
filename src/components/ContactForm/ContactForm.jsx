@@ -3,7 +3,7 @@ import './ContactForm.scss';
 // Компоненты
 // import Button from '../Button/Button';
 
-function ContactForm() {
+const ContactForm = () => {
 	return (
 		<div className="contact">
 			<div className="contact-info">
@@ -35,7 +35,10 @@ function ContactForm() {
 						/>
 						<p className="contact-social__title">
 							Вконтакте:{' '}
-							<a href="#" className="contact-social__link">
+							<a
+								href="https://vk.com/leonardo"
+								target="_blank"
+								className="contact-social__link">
 								vk.com/leonardo
 							</a>
 						</p>
@@ -50,7 +53,10 @@ function ContactForm() {
 						/>
 						<p className="contact-social__title">
 							Telegram:{' '}
-							<a href="#" className="contact-social__link">
+							<a
+								href="https://t.me/Steklie"
+								target="_blank"
+								className="contact-social__link">
 								@Steklie
 							</a>
 						</p>
@@ -86,6 +92,6 @@ function ContactForm() {
 			</form>
 		</div>
 	);
-}
+};
 
 export default ContactForm;

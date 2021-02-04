@@ -3,3 +3,8 @@ $light-color: #fff;
 $dark-color: #1d1d1d;
 $light-dark-color: #252525;
 $grey: #6c7080;
+$dark-gold: #9c6d41;
+$light-gold: #dcad68;
+
+$gradinet: linear-gradient(90deg, $dark-gold, $light-gold, $dark-gold);
+$gradientTo: linear-gradient(90deg, $dark-gold, $light-gold);

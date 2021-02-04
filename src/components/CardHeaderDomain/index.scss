@@ -1,0 +1,18 @@
+@import '../../css/colors.scss';
+
+.card {
+	&__photo--bg {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: url('../../images/card-bg.jpg');
+	}
+
+	&__title {
+		font-weight: 600;
+		font-size: 21px;
+		color: $light-color;
+		text-shadow: 0px 0px 27px rgba(255, 255, 255, 0.6);
+		text-transform: uppercase;
+	}
+}

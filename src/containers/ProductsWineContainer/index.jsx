@@ -7,7 +7,7 @@ import ProductsWine from '../../components/ProductsWine/ProductsWine';
 // Action
 import getProduct from '../../action/getProduct';
 
-function ProductsWineContainer() {
+const ProductsWineContainer = () => {
 	if (state.productWine.wines.length > 0) {
 		const maxProduct = state.productWine.wines.length;
 		const products = [];
@@ -34,6 +34,6 @@ function ProductsWineContainer() {
 	} else {
 		return <p>Продуктов пока что нет</p>;
 	}
-}
+};
 
 export default view(ProductsWineContainer);

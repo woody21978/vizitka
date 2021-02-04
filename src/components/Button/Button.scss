@@ -1,4 +1,5 @@
 @import '../../css/fonts.scss';
+@import '../../css/colors.scss';
 .btn {
 	background: transparent;
 	outline: none;
@@ -9,23 +10,21 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
-	&-text {
-		font-size: 15px;
-		letter-spacing: 0.3px;
-		text-align: center;
-	}
+	font-size: 15px;
+	letter-spacing: 0.3px;
+	text-align: center;
+	color: $light-color;
 
 	&-gold {
-		background-image: linear-gradient(90deg, #9c6d41 0%, #dcad68 100%);
+		background-image: $gradientTo;
 		border: 3px solid;
-		border-image-source: linear-gradient(90deg, #ba8c48 0%, #a97d54 100%);
+		border-image-source: linear-gradient(90deg, #ba8c48, #a97d54);
 	}
 
 	&-transparent {
 		background-image: transparent;
 		border: 1px solid;
-		border-image-source: linear-gradient(90deg, #ba8c48 0%, #a97d54 100%);
+		border-image-source: linear-gradient(90deg, #ba8c48, #a97d54);
 		position: relative;
 		z-index: 1;
 
@@ -54,6 +53,9 @@
 	}
 
 	&-xs {
+		max-width: 130px;
+		width: 100%;
+		height: 39px;
 		padding: 10px 27px;
 	}
 

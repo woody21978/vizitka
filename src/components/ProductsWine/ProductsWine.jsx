@@ -5,7 +5,7 @@ import '../ProductWine/ProductWine';
 import ProductWine from '../ProductWine/ProductWine';
 import Button from '../Button/Button';
 
-function ProductsWine({ products, action, visibleButton }) {
+const ProductsWine = ({ products, action, visibleButton }) => {
 	return (
 		<div className="products-wrapper">
 			<div className="products-wine">
@@ -24,6 +24,6 @@ function ProductsWine({ products, action, visibleButton }) {
 			)}
 		</div>
 	);
-}
+};
 
 export default ProductsWine;

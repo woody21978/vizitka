@@ -1,0 +1,18 @@
+@import '../../css/colors.scss';
+
+.card-name {
+	display: flex;
+	justify-content: space-between;
+	letter-spacing: 0.32px;
+	margin-bottom: 19px;
+
+	&-item {
+		display: flex;
+		align-items: center;
+	}
+
+	&__title {
+		color: $light-color;
+		margin-left: 14px;
+	}
+}

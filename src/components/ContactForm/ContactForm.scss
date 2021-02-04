@@ -113,3 +113,20 @@
 		}
 	}
 }
+
+@media (max-width: 991px) {
+	.contact {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		&-info {
+			margin-left: 0;
+		}
+
+		&-form {
+			margin-right: 0;
+			margin-top: 38px;
+		}
+	}
+}

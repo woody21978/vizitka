@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Dropdown.scss';
 
-function Dropdown() {
+const Dropdown = () => {
 	const [visible, setVisible] = useState(false);
 	return (
 		<div className="dropdown">
@@ -37,6 +37,6 @@ function Dropdown() {
 			)}
 		</div>
 	);
-}
+};
 
 export default Dropdown;

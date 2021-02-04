@@ -3,12 +3,9 @@ import './Main.scss';
 // Компоненты
 import Section from '../../components/Section/Section';
 import Dropdown from '../../components/Dropdown/Dropdown';
-// import SectionUser from '../../components/SectionUser/SectionUser';
 import User from '../../components/User/User';
-// import SectionSmi from '../../components/SectionSmi/SectionSmi';
-import MediaCards from '../../components/MediaCards/MediaCards';
+import MediaCardsContainer from '../../containers/MediaCardsContainer';
 import ContactForm from '../../components/ContactForm/ContactForm';
-// import SectionContact from '../../components/SectionContact/SectionContact';
 import Footer from '../../components/Footer/Footer';
 
 function Main() {
@@ -19,7 +16,7 @@ function Main() {
 				classes="section-smi"
 				title="Информация в СМИ"
 				dropdown={<Dropdown />}
-				content={<MediaCards />}
+				content={<MediaCardsContainer />}
 			/>
 			<Section
 				classes="section-contact"

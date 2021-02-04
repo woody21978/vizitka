@@ -1,5 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { view } from '@risingstack/react-easy-state';
+import state from '../../store';
 import './Menu.scss';
 import Button from '../Button/Button';
 import MenuLogo from './MenuLogo';
@@ -134,7 +136,15 @@ const Menu = () => {
 							</div>
 							<span className="menu-link__title">СМИ</span>
 						</NavLink>
-						<NavLink to="product" className="menu-link">
+						<NavLink
+							onMouseOver={() => {
+								state.headerMenu.isOpen = true;
+							}}
+							// onMouseOut={() => {
+							// 	state.headerMenu.isOpen = false;
+							// }}
+							to="product"
+							className="menu-link">
 							<div className="menu-icons">
 								<svg
 									className="menu-icons__item"
@@ -325,4 +335,4 @@ const Menu = () => {
 	);
 };
 
-export default Menu;
+export default view(Menu);

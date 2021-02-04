@@ -1,0 +1,99 @@
+@import '../../css/base.scss';
+
+.header-menu {
+	&-wrapper {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 800px;
+		height: 330px;
+
+		display: flex;
+		align-items: center;
+
+		z-index: 100;
+	}
+
+	&-bar {
+		width: 350px;
+		height: 100%;
+
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+
+		padding: 20px 0;
+		box-sizing: border-box;
+
+		background: $dark-color;
+
+		&__option {
+			width: 100%;
+			height: 50px;
+
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+
+			padding: 0 10px;
+			box-sizing: border-box;
+
+			font-family: $CorsicaRegular;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 18px;
+			line-height: 22px;
+			letter-spacing: 0.322746px;
+
+			color: $light-color;
+
+			transition: 0.5s;
+
+			&:hover {
+				background: $light-dark-color;
+			}
+		}
+	}
+
+	&-options {
+		width: 450px;
+		height: 100%;
+
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+
+		padding: 20px 0;
+		box-sizing: border-box;
+
+		background: $light-dark-color;
+
+		&__option {
+			width: 100%;
+			height: 50px;
+
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+
+			padding: 0 10px;
+			box-sizing: border-box;
+
+			font-family: $CorsicaRegular;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 18px;
+			line-height: 22px;
+			letter-spacing: 0.322746px;
+
+			color: $light-color;
+
+			transition: 0.5s;
+			cursor: pointer;
+
+			&:hover {
+				background: $dark-color;
+			}
+		}
+	}
+}

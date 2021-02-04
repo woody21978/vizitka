@@ -26,6 +26,44 @@ const state = store({
 			],
 		},
 	},
+
+	// HeaderMenu
+
+	headerMenu: {
+		selectedId: 0,
+		isOpen: false,
+		list: [
+			{
+				id: 0,
+				name: 'Социальные сети',
+				options: [
+					{ id: 0, name: 'VK' },
+					{ id: 1, name: 'FaceBook' },
+				],
+			},
+			{
+				id: 1,
+				name: 'Вино',
+				options: [
+					{ id: 0, name: 'White' },
+					{ id: 1, name: 'Red' },
+				],
+			},
+			{
+				id: 2,
+				name: 'Домены',
+				options: [
+					{ id: 0, name: 'Премиальные' },
+					{ id: 1, name: 'Обычные' },
+					{ id: 2, name: 'Односимвольные' },
+					{ id: 3, name: 'Двухсимвольные' },
+					{ id: 4, name: 'Трёхсимвольные' },
+					{ id: 5, name: 'Другие' },
+				],
+			},
+		],
+	},
+
 	// SMI
 	media: [
 		{

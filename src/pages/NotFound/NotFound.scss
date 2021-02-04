@@ -1,0 +1,27 @@
+@import '../../css/base.scss';
+
+.not-found {
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&__title {
+		font-family: $WilliamRegular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 38px;
+		line-height: 46px;
+
+		text-align: center;
+		letter-spacing: 0.830807px;
+
+		color: $light-color;
+	}
+
+	&__img {
+		margin: 100px 0;
+		width: 450px;
+		height: 200px;
+	}
+}

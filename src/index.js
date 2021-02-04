@@ -5,12 +5,14 @@ import './css/base.scss';
 // import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import Menu from './components/Menu/Menu';
+
 // Роутинг
 import Router from './routes/Routes';
 
 ReactDOM.render(
 	<BrowserRouter>
 		<Menu />
+
 		{/* <App /> */}
 		<Router />
 	</BrowserRouter>,
